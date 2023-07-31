@@ -14,10 +14,10 @@ services:
       - backend
 
   api:
-    image: micro-api:latest
+    image: micro-node:latest
     volumes:
-      - /$DIR/nfs/micro-api/config:/app/src/config
-      - /$DIR/nfs/micro-api/logs:/app/logs
+      - /$DIR/nfs/micro-node/config:/app/src/config
+      - /$DIR/nfs/micro-node/logs:/app/logs
       - /$DIR/nfs/micro-file/uploads:/app/uploads
     networks:
       - backend

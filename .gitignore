@@ -2,7 +2,7 @@
 default.conf
 nginx.conf
 docker-compose.yml
-micro-api/
+micro-node/
 *.version
 # Editor directories and files
 .idea

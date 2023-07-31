@@ -27,7 +27,7 @@ server {
     }
 
     location /socket.io {
-        proxy_pass http://micro_node_api:4000;
+        proxy_pass http://micro_api:4000;
 
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection "upgrade";

@@ -3,7 +3,7 @@
 # micro
 Docker Stack with Nginx as a Reverse Proxy Server and TypeScript Node for Socket.IO and RESTful API and.
 
-**This repository includes only Nginx and the builder.:**[micro-api is here.](https://github.com/kimhyunsoon/micro-api)  
+**This repository includes only Nginx and the builder.:**[micro-node is here.](https://github.com/kimhyunsoon/micro-node)  
 
 # Directory Structure
 ```
@@ -16,7 +16,7 @@ nfs
    └──config
       │  nginx.conf
       │  default.conf
-└──micro-api
+└──micro-node
    └──config
       │  config.json
 
@@ -27,16 +27,16 @@ workspace
 # How to Apply
 0. Please create the [Directory Structure](#directory-structure)
 1. Git clone [micro-builder](https://github.com/kimhyunsoon/micro-builder) in `workspace`
-2. Git clone [micro-api](https://github.com/kimhyunsoon/micro-api) in `workspace/micro-api`
+2. Git clone [micro-node](https://github.com/kimhyunsoon/micro-node) in `workspace/micro-node`
 3. Write `docker-compose.yml`:  
    Refer to [docker-compose.yml.sample](https://github.com/kimhyunsoon/micro-builder/blob/main/docker-compose.yml.sample)
 4. Write `nginx.conf` and `default.conf` in `nfs/micro-nginx/config/`:  
    Refer to [nginx.conf.sample](https://github.com/kimhyunsoon/micro-builder/blob/main/nginx.conf.sample) and [default.conf.sample](https://github.com/kimhyunsoon/micro-builder/blob/main/default.conf.sample))
-5. Write `config.json` in `nfs/micro-api/config/`:  
-   Refer to [config.json.sample](https://github.com/kimhyunsoon/micro-api/config.json.sample)
-6. Build `micro-api` and `micro-nginx`
+5. Write `config.json` in `nfs/micro-node/config/`:  
+   Refer to [config.json.sample](https://github.com/kimhyunsoon/micro-node/config.json.sample)
+6. Build `micro-node` and `micro-nginx`
    ```
-   bash micro-api/build.sh
+   bash micro-node/build.sh
    bash micro-nginx/build.sh
    ```
 7. Deploy Docker Swarn
