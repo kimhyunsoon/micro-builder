@@ -3,8 +3,7 @@
 Docker Stack with Nginx as a Reverse Proxy Server and TypeScript Node for Socket.IO and RESTful API and.
 
 
-**This repository includes only Nginx and the builder.:**  
-[micro-api is here.](https://github.com/kimhyunsoon/micro-api)  
+**This repository includes only Nginx and the builder.:**[micro-api is here.](https://github.com/kimhyunsoon/micro-api)  
 
 # Directory Structure
 ```
