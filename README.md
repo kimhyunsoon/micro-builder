@@ -1,6 +1,6 @@
 ![image](https://github.com/kimhyunsoon/micro-builder/assets/60641694/53ca8710-58da-4b68-9077-a52970b87f61)
 
-Docker Stack with Nginx as a Reverse Proxy** Server and TypeScript Node for Socket.IO and RESTful API and.
+Docker Stack with Nginx as a Reverse Proxy Server and TypeScript Node for Socket.IO and RESTful API and.
 
 
 **This repository includes only Nginx and the builder.:**  
