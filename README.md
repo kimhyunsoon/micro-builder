@@ -10,6 +10,7 @@ Docker Stack with Nginx as a Reverse Proxy Server and TypeScript Node for Socket
 nfs
 └──micro-file
    └──uploads
+   └──logs
 └──micro-nginx
    └──htdocs
       │  "The frontend build artifacts are here."
