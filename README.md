@@ -4,7 +4,7 @@ Docker Stack with Nginx as a Reverse Proxy** Server and TypeScript Node for Sock
 
 
 **This repository includes only Nginx and the builder.:**  
-[MICRO-API is here.](https://github.com/kimhyunsoon/micro-api)  
+[micro-api is here.](https://github.com/kimhyunsoon/micro-api)  
 
 # Directory Structure
 ```
