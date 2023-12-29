@@ -4,14 +4,17 @@ services:
   nginx:
     image: micro-nginx:latest
     ports:
-      - "$PORT:80"
+      - target: 80
+        published: $PORT
+        protocol: tcp
+        mode: host
     volumes:
       - /$DIR/nfs/micro-nginx/htdocs:/usr/share/nginx/html
       - /$DIR/nfs/micro-nginx/config/nginx.conf:/etc/nginx/nginx.conf
       - /$DIR/nfs/micro-nginx/config/default.conf:/etc/nginx/conf.d/default.conf
       - /$DIR/nfs/micro-file/uploads:/mnt/uploads
     networks:
-      - backend
+      - micro_network
 
   api:
     image: micro-node:latest
@@ -20,7 +23,8 @@ services:
       - /$DIR/nfs/micro-node/logs:/app/logs
       - /$DIR/nfs/micro-file/uploads:/app/uploads
     networks:
-      - backend
+      - micro_network
 
 networks:
-  backend:
+  micro_network:
+    external: true
